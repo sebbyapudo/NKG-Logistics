@@ -154,6 +154,10 @@ p {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
 }
+
+.images {
+  border-radius: var(--radius);
+}
 .btn:hover {
   color: var(--clr-white);
   background: var(--clr-black);
@@ -332,14 +336,85 @@ header {
 .title span {
   color: var(--clr-secondary);
 }
-#about,
-#services,
-#tours {
+
+#about {
   height: 80vh;
 }
+/* Services */
 #services {
   background: var(--clr-white);
 }
+
+.services-info {
+  max-width: 600px;
+  text-align: center;
+  margin-inline: auto;
+  padding: 1.5rem 0;
+}
+
+.info-title {
+  text-align: center;
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+
+.fulfillment-solutions {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  padding: 1rem 1rem;
+  margin: 2rem 0;
+  border-radius: var(--radius);
+}
+
+.fulfillment-solutions .fulfill,
+.parcel-delievery .parcel {
+  text-align: end;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.fulfillment-solutions .fulfill,
+.fulfillment-solutions .info {
+  color: var(--clr-white);
+}
+
+@media screen and (min-width: 800px){
+  .mailing-services {
+    display: flex;
+    gap: 3.5rem
+  }
+
+  .mailing-services img {
+    width: 40vw;
+  }
+
+  .info-title {
+    text-align: start;
+  }
+
+  .info {
+    padding-top: 2rem;
+    /* text-align: center; */
+  }
+
+  .fulfillment-solutions .fulfill {
+    padding: 2rem 0;
+    max-width: 650px;
+    text-align: start;
+    font-size: 2rem;
+    letter-spacing: var(--spacing);
+  }
+
+  .parcel-delievery .parcel {
+    padding: 2rem 0;
+    max-width: 650px;
+    margin-left: auto;
+    text-align: end;
+    font-size: 2rem;
+    letter-spacing: var(--spacing);
+  }
+}
+
 footer {
   background: var(--clr-grey-1);
   padding: 5rem 1rem;
