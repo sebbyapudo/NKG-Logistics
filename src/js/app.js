@@ -66,7 +66,7 @@ scrollLinks.forEach((scrollLink) => {
       position = position - navHeight;
     }
 
-    if (navHeight > 82) {
+    if (navHeight > 105) {
       position = position + linksContainerHeight;
     }
 
