@@ -323,6 +323,12 @@ header {
   margin: 0 auto;
   margin-bottom: 1.25rem;
 }
+
+.container a {
+  margin-right: 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 0.75rem;
+}
 @media screen and (min-width: 768px) {
   .container p {
     max-width: 40rem;
@@ -464,6 +470,7 @@ footer {
   /* background: var(--clr-grey-1); */
   padding: 5rem 1rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
@@ -472,6 +479,7 @@ footer {
   footer {
     padding: 5rem 1rem;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
