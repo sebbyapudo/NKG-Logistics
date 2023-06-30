@@ -237,7 +237,7 @@ nav {
   color: var(--clr-secondary);
 }
 .logo {
-  height: 50px;
+  height: 80px;
 }
 .links-container {
   height: 0;
@@ -338,7 +338,7 @@ header {
 }
 
 #about {
-  height: 120vh;
+  height: 180vh;
   background-color: #44525C;
   color: var(--clr-white);
 }
@@ -410,7 +410,16 @@ header {
   overflow: hidden;
 }
 
+.mailing-text i {
+  margin: 1rem;
+  font-size: 2.5rem;
+}
+
 @media screen and (min-width: 800px){
+  #about {
+    height: 120vh;
+  }
+
   .mailing-services {
     display: flex;
     gap: 3.5rem
@@ -447,7 +456,7 @@ header {
   }
   .about-img {
     width: 250vw;
-    height: 900px;
+    height: 500px;
   }
 }
 
@@ -455,14 +464,12 @@ footer {
   /* background: var(--clr-grey-1); */
   padding: 5rem 1rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
 @media screen and (min-width: 800px) {
   footer {
-    /* background: var(--clr-grey-1); */
     padding: 5rem 1rem;
     display: flex;
     align-items: center;
@@ -471,10 +478,21 @@ footer {
 }
 footer p {
   color: var(--clr-black);
+  max-width: 500px;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   margin-bottom: 0;
+  padding: 1rem 0;
+}
+
+footer a {
+  color: var(--clr-black);
+}
+
+footer i {
+  margin-right: 1rem;
+  font-size: 1rem;
 }
 
 .top-link {
