@@ -338,8 +338,16 @@ header {
 }
 
 #about {
-  height: 80vh;
+  height: 110vh;
+  background-color: #44525C;
+  color: var(--clr-white);
 }
+
+#about h4,
+#about p {
+  color: var(--clr-white);
+}
+
 /* Services */
 #services {
   background: var(--clr-white);
@@ -378,6 +386,13 @@ header {
   color: var(--clr-white);
 }
 
+/* about  */
+.about-img {
+  width: 90vw;
+  height: 300px;
+  overflow: hidden;
+}
+
 @media screen and (min-width: 800px){
   .mailing-services {
     display: flex;
@@ -413,14 +428,32 @@ header {
     font-size: 2rem;
     letter-spacing: var(--spacing);
   }
+  .about-img {
+    width: 100vw;
+    height: 400px;
+  }
 }
 
 footer {
-  background: var(--clr-grey-1);
+  /* background: var(--clr-grey-1); */
   padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 800px) {
+  footer {
+    /* background: var(--clr-grey-1); */
+    padding: 5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 footer p {
-  color: var(--clr-white);
+  color: var(--clr-black);
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
